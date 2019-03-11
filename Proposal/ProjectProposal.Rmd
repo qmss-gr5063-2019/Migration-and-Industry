@@ -11,7 +11,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Title**: 
+**Title**: Evolution of migration flow patterns and industry trends over time
 
 **Abstract**: We are interested in looking at migration flows and industry patterns across countries. We will explore the following questions:
 
@@ -33,62 +33,34 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - We expect to use maps for the main visualization of migration flows over time. Ideally, this is a 'moving' visualiztion (on loop) that shows the actual movement of migrants over the map, over the years.  
 
-- We expect to plot another interactive, map. For this map, users can click on the country of interest to gain information about the number of immigrants, number of emigrants, GDP, top n industries, etc for a specified year of interest.
+- We expect to plot another interactive map. For this map, users can click on the country of interest to gain information about the number of immigrants, number of emigrants, GDP, top n industries, etc for a specified year of interest.
 
-- We expect to use static images based on ggplot2 to present the top industries of each of  the countries with greatest number of immigrants. It will also be used to present the common major industries among countries with greatest inflow of migrants. 
+- We expect to use static images/interactive plots based on ggplot2 to present the top industries of each of  the countries with greatest number of immigrants. It will also be used to present the common major industries among countries with greatest inflow of migrants. 
 
-- We expect to provide visualization of text analyses. These visualizations would be used to present a sentiment analysis (towards immigrants) conducted on countries facing an influx of immigrants. 
+- We expect to provide static visualization of text analyses. These visualizations would be used to present a sentiment analysis (towards immigrants) conducted on countries facing an influx of immigrants. 
 
-**Data**: For our analysis, we would required data on the following areas:
+**Data**: For our analysis, we would required data from a few areas. We might have to combine data from existing datasets, and use twitter API to collect additional data that is relevant to our project.
 
-- International migration stock at mid-year by major region, country or area, 1990 - 2017 (from United Nations, Department of Economic and Social Affairs. Population Division (2017)):
-\ http://www.un.org/en/development/desa/population/migration/data/estimates2/estimates17.asp
-  - This country-level dataset has collected data of international migrant by age, sex and origin. Estimates are presented for 1990, 1995, 2000, 2005, 2010, 2015 and 2017 and are available for all countries and areas of the world. 
-
-\n
-- International migration database, 2000 - 2016 (from Organization for Economic Co-operation and Development(OCED)):
-\ https://stats.oecd.org/Index.aspx?DataSetCode=MIG
-  - This country-level database provides detailed migration data such as Inflows/Outflows of foreign population by nationality.
+- International migration stock at mid-year by major region, country or area, 1990 - 2017 (from United Nations, Department of Economic and Social Affairs. Population Division (2017)): <br /> http://www.un.org/en/development/desa/population/migration/data/estimates2/estimates17.asp
+  - This country-level dataset has collected data of international migrant by age, sex, destination, and origin. Estimates are presented for 1990, 1995, 2000, 2005, 2010, 2015 and 2017 and are available for all countries and areas of the world. 
+  - This will be used for the 'moving' visualization, in which we use geographical identifiers (countries / regions) to plot the movement of migrants between countries/regions over time
+    - Ideally, we can further breakdown the data by gender, or age groups to provide a more informative data visualization
+  - This will also be used for identify the top n countries with greatest inflow of migrants, greatest net migration, etc for some of our plots.
 
 \n
-- GDP data of all countries and economies, 1960 - 2017 (from World Bank Open Data):
-\ https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?year_low_desc=false
+- Value added by activity, 1970 - 2017(from UNdata): <br />
+http://data.un.org/Data.aspx?d=SNAAMA&f=grID%3A201%3BcurrID%3ANCU%3BpcFlag%3A0
+  - This country-level dataset contains annual value-added-by-activity (e.g. agriculture, mining, construction, financial, etc) of each country from 1970 to 2017. Value added by activity breaks down the total value added by sector. It could be used to reflect the contribution of industries to the overall economy.
+  - This will be used for the plots that look at top n industries for a group of countries of interest.
+  - This will also be used for the plot that looks at the common major industries among the countries with greatest inflow of migrants.
+  
+\n
+- GDP data of all countries and economies, 1960 - 2017 (from World Bank Open Data): <br />
+https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?year_low_desc=false
   - This country-level dataset includes annual GDP(current US$) data for all countries and economies.
+  - This data will be used for our interactive plot. GDP information will be provided along with information about 'top industries' of each country of interest.
 
 \n
-- Value added by activity, 1970 - 2017(from Organization for Economic Co-operation and Development(OCED)):
-\ https://data.oecd.org/natincome/value-added-by-activity.htm
-  - This country-level dataset contains annual value added by activity data of highlighted countries. Value added by activity breaks down the total value added by sector, namely agriculture, utilities, and other service activities. It could be used to reflect the contribution of industries to the overall economic. 
-
-\n
-- Twitter API data:
-\ https://developer.twitter.com/en/docs/tweets/rules-and-filtering/overview/premium-operators
-
-  - We will try to extract text data to do the sentiment analysis about whether 'migration' is typically mentioned alongside with positive or negative words.
-
-## to remove
-
-Final group project (30%): A final group project (3-4 students) presented in the form of a website and accompanying project book. You will analyze data of your own choosing and report the results using (one or more of)
-
-static images based on ggplot2,
-maps using geospatial data,
-visualizations of text analyses
-network visualizations
-AND
-prepare a hosted, interactive display of some of your visualizations.
-
-Final Project - Data
-For the final project, your data should:
-
-be a larger dataset to allow analysis in different forms
-contain at best one (or more) of the following elements
-some geographic identifiers (cities, addresses. lat-long etc.) to allow mapping
-some text to allow simpe text analyses
-contain a network matrix (or item relationships) to plot visual networks
-Preference is for data that you either
-put together yourself from existing datasets,
-and/or using some API to collect the data you
-need from an online source (e.g. Twitter).
-
-final output should be something that you could (if you choose to) use as a portfolio for job applications etc. to show your skills
-for that, it needs to be visually appealing, informative, and (partially) interactive.
+- Twitter API data: <br />
+https://developer.twitter.com/en/docs/tweets/rules-and-filtering/overview/premium-operators
+  - The text data extracted will be used to carry out sentiment analysis towards immigrants.

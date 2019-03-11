@@ -1,6 +1,6 @@
 ---
 title: "Group L Project Proposal - Migration and Industry Trends"
-author: "Yihong Yvonne Loo & Zu Cheng Mark Ong"
+author: "Yihong Liu & Zu Cheng Mark Ong"
 date: "10/03/2019"
 output: 
   html_document:
@@ -64,3 +64,9 @@ https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?year_low_desc=false
 - Twitter API data: <br />
 https://developer.twitter.com/en/docs/tweets/rules-and-filtering/overview/premium-operators
   - The text data extracted will be used to carry out sentiment analysis towards immigrants.
+  
+**Final Product Preview**:   
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(knitr)
+knitr::include_graphics("folder/handdrawn.jpg")
+```

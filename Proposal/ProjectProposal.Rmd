@@ -1,15 +1,73 @@
 ---
-title: "DataVizProposal"
+title: "Group L Project Proposal - Migration and Industry Trends"
 author: "Yihong Yvonne Loo & Zu Cheng Mark Ong"
 date: "10/03/2019"
 output: 
   html_document:
     keep_md: true
-
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Project Proposal
+**Title**: 
+
+**Abstract**: We are interested in looking at migration flows and industry patterns across countries. We will explore the following questions:
+
+- How does migration flow evolved over time (in terms of volume of migration, countries with major inflow of migrants, countries with major outflow of migrants,  etc)
+  - We plan to plot migration data, over a time series, on maps
+  - We can look at migration flow between countries and/or between regions/continents. Grouping the data by continents/regions might show a clear visualization of the broad disposition pattern of humans. as compared to plotting data at country-level.
+  - Which countries observed the greatest increase in immigrants over time?
+  - We can look at the net migration of each country/region/continent over time, which is the difference between the number of immigrants (people coming into an area) and the number of emigrants (people leaving an area) 
+
+- How do the top industries of countries change over time?
+  - Specifically, we want to look at the top n industries for each of the top n countries in term of number of immigrants
+  - We would also want to find out what are the common major industries among the countries with greatest inflow of migrants. We hope to gain insight on relationships (if any) between industry trends and migration flow trends. 
+  
+- What do the sentiments towards immigrants change over time?
+  - If feasible, we plan to analyze sentiments from twitter data, whether 'migration' is typically mentioned alongside with positive or negative words
+  - To limit the scale of this project, we might choose to focus on the top n countries in terms of number of immigrants, or top n countries in terms of sum of immigrants and emigrants (total number of people moving in and out of the country)
+
+**Data Visualization Techniques**: 
+
+- We expect to use maps for the main visualization of migration flows over time. Ideally, this is a 'moving' visualiztion that shows the actual movement of migrants over the map, over the years. 
+
+- We expect to plot another static, but interactive, map. For this map, users can click on the country of interest to gain information about the number of immigrants, number of emigrants, GDP, top n industries, etc for a specified year of interest.
+
+- We expect to use static images based on ggplot2 to present the top industries of each of  the countries with greatest number of immigrants. It will also be used to present the common major industries among countries with greatest inflow of migrants. 
+
+- We expect to provide visualization of text analyses. These visualizations would be used to present a sentiment analysis (towards immigrants) conducted on countries facing an influx of immigrants. 
+
+**Data**: For our analysis, we would required data on the following areas:
+
+- For
+
+
+
+## to remove
+
+Final group project (30%): A final group project (3-4 students) presented in the form of a website and accompanying project book. You will analyze data of your own choosing and report the results using (one or more of)
+
+static images based on ggplot2,
+maps using geospatial data,
+visualizations of text analyses
+network visualizations
+AND
+prepare a hosted, interactive display of some of your visualizations.
+
+Final Project - Data
+For the final project, your data should:
+
+be a larger dataset to allow analysis in different forms
+contain at best one (or more) of the following elements
+some geographic identifiers (cities, addresses. lat-long etc.) to allow mapping
+some text to allow simpe text analyses
+contain a network matrix (or item relationships) to plot visual networks
+Preference is for data that you either
+put together yourself from existing datasets,
+and/or using some API to collect the data you
+need from an online source (e.g. Twitter).
+
+final output should be something that you could (if you choose to) use as a portfolio for job applications etc. to show your skills
+for that, it needs to be visually appealing, informative, and (partially) interactive.

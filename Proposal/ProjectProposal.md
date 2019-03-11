@@ -64,4 +64,4 @@ https://developer.twitter.com/en/docs/tweets/rules-and-filtering/overview/premiu
   - The text data extracted will be used to carry out sentiment analysis towards immigrants.
   
 **Final Product Preview**:   
-<img src="folder/handdrawn.jpg" width="1140" />
+<img src="folder/handdrawn.jpg" width="1103" />

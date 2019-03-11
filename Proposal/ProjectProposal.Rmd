@@ -41,9 +41,30 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Data**: For our analysis, we would required data on the following areas:
 
-- For
+- International migration stock at mid-year by major region, country or area, 1990 - 2017 (from United Nations, Department of Economic and Social Affairs. Population Division (2017)):
+\ http://www.un.org/en/development/desa/population/migration/data/estimates2/estimates17.asp
+  - This country-level dataset has collected data of international migrant by age, sex and origin. Estimates are presented for 1990, 1995, 2000, 2005, 2010, 2015 and 2017 and are available for all countries and areas of the world. 
 
+\n
+- International migration database, 2000 - 2016 (from Organization for Economic Co-operation and Development(OCED)):
+\ https://stats.oecd.org/Index.aspx?DataSetCode=MIG
+  - This country-level database provides detailed migration data such as Inflows/Outflows of foreign population by nationality.
 
+\n
+- GDP data of all countries and economies, 1960 - 2017 (from World Bank Open Data):
+\ https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?year_low_desc=false
+  - This country-level dataset includes annual GDP(current US$) data for all countries and economies.
+
+\n
+- Value added by activity, 1970 - 2017(from Organization for Economic Co-operation and Development(OCED)):
+\ https://data.oecd.org/natincome/value-added-by-activity.htm
+  - This country-level dataset contains annual value added by activity data of highlighted countries. Value added by activity breaks down the total value added by sector, namely agriculture, utilities, and other service activities. It could be used to reflect the contribution of industries to the overall economic. 
+
+\n
+- Twitter API data:
+\ https://developer.twitter.com/en/docs/tweets/rules-and-filtering/overview/premium-operators
+
+  - We will try to extract text data to do the sentiment analysis about whether 'migration' is typically mentioned alongside with positive or negative words.
 
 ## to remove
 

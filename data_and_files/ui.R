@@ -147,7 +147,7 @@ body <- dashboardBody(
   ),
   fluidRow(
     # selection
-    column(offset = 2, width = 2, uiOutput("allindustrySelection0"))
+    column(offset = 2, width = 8, uiOutput("allindustrySelection0"))
   ),
   
   # Main panel

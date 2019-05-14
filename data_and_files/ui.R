@@ -112,7 +112,7 @@ body <- dashboardBody(
   
   #industryinfochart
   fluidRow(
-    column(offset = 2, width = 8, align = "left", img(img(src = 'industrychart.png', height = '349px', width = '820px')))
+    column(offset = 2, width = 8, align = "left", img(img(src = 'industrychart.png', height = '380px', width = '820px')))
   ),
   
   #paragraph about third visualisation
